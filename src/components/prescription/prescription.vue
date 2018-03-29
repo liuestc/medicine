@@ -292,7 +292,8 @@ export default {
   				
 
   				axios.post("/api/recipe/addRecipe",{
-  					recipeList:this.recipeAmount
+  					recipeList:this.recipeAmount,
+            action:0
   				}).then((res3)=>{
   					console.log(res3)
 					

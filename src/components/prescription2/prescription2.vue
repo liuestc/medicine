@@ -343,7 +343,8 @@ export default {
   			// console.log(res)
   			if(res.data.returnMsg=="请求成功"){
   				axios.post("/api/recipe/addRecipe",{
-  					recipeList:this.recipeAmount
+  					recipeList:this.recipeAmount,
+            action:1
   				}).then((res3)=>{
 
   					axios.get("/api/dailyPatient/updateStatus",{
